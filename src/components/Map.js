@@ -6,7 +6,7 @@ import LocationInfoBox from './LocationInfoBox'
 
 const Map = ({ eventData, center, zoom }) => {
   const [locationInfo, setLocationInfo] = useState(null)
-  console.log(process.env)
+  
 
   const markers = eventData.map(ev => {
     if (ev.categories[0].id === 8) {
